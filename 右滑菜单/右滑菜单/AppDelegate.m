@@ -29,6 +29,7 @@
     LeftViewController *leftVC = [[LeftViewController alloc] init];
     
     LeftSlideViewController *leftSlideVC = [[LeftSlideViewController alloc] initWithLeftView:leftVC andMainView:self.mainNavigationController ];
+//    [leftSlideVC setPanEnabled:NO]; //关闭滑动手势
     self.leftSlideVC = leftSlideVC;
     self.window.rootViewController = leftSlideVC;
     return YES;
